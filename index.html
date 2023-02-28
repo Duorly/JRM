@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#dff73d',
+                    },
+                    fontFamily: {
+                        'romans': ['romans', ...defaultTheme.fontFamily.sans],
+                    },
+                    backgroundImage: {
+                        'hero-bg': "url('/assets/images/bg.png')",
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/owlcarousel/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <div class="container mx-auto h-screen px-4">
+        <nav class="flex w-full justify-between my-4 py-4">
+            <div class="w-2/3"><img src="/assets/images/logo.png" alt=""></div>
+            <div class="w-1/3 hidden md:block">
+                <ul class="flex justify-between text-xl text-clifford">
+                    <li>Accueil</li>
+                    <li>Portfolio</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+        <section class="flex mt-6 flex-col md:flex-row">
+            <div class="w-1/2 flex flex-col justify-evenly text-xl font-[Poppins]">
+                <div>
+                    <span>Welcome !</span>
+
+                    <div class="font-[romans] text-[60px] leading-[60px] mt-5">Je suis <span
+                            class="text-[#F27904] font-[romans]">jalade</span>
+                        mongo</div>
+                    <span class="text-gray-600">
+                        Un couteau suisse au service des entreprises, J'accompagne mes clients dans la communication
+                        visuelle, Le motion design et le montage audiovisuel. Féru de Lecture, Écriture, Musique et jeux
+                        vidéo ...
+                    </span>
+                    <div class="mt-8">
+                        <input class="bg-gray-200 rounded-l-2xl h-[50px] px-2 w-2/3 border-orange-500 border-2"
+                            placeholder="Ton adresse mail ..." type="email" name="email" id="">
+                        <button
+                            class="bg-[#F27904] ml-0 h-[50px] -ml-2 text-white px-6 rounded-r-2xl">S'abonner</button>
+                    </div>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook p-2 bg-black text-white rounded-full"></i>
+                    <i class="fa-brands fa-linkedin-in p-2 bg-black text-white rounded-full"></i>
+                    <i class="fa-brands fa-instagram p-2 bg-black text-white rounded-full"></i>
+                    <i class="fa-brands fa-twitter p-2 bg-black text-white rounded-full"></i>
+                </div>
+            </div>
+            <div class="w-1/2 flex justify-center p-3">
+                <img src="/assets/images/banner.png">
+            </div>
+
+
+        </section>
+    </div>
+    <section class="h-screen bg-[url('/assets/images/bg.png')]">
+
+        <div class="container mx-auto flex">
+            <div class="w-1/2 flex flex-col justify-center text-white">
+                <span class="font-[romans] text-[60px] leading-[60px]">portofolio</span>
+                <span class="text-2xl w-1/2">
+                    Vous trouverez ici les projets de
+                    mes differents clients ainsi que
+                    mes challenges creatifs
+                </span>
+                <div class="mt-5"> <button
+                        class="bg-orange-500 text-lg py-3 px-5 rounded-full w-auto border-orange-300 border-8">
+                        Cliquer ici <i class="fa-solid fa-caret-right"></i>
+                    </button></div>
+            </div>
+            <div class="w-1/2 flex justify-center border-2 border-red">
+                <img class="" src="/assets/images/portfolio.png">
+            </div>
+        </div>
+    </section>
+
+    <div class="container mx-auto h-screen flex flex-col justify-center py-8">
+
+        <div class="my-5">
+            <h1 class="font-[romans] text-[60px] leading-[60px] text-center">blog</h1>
+        </div>
+
+
+        <div class="flex h-full">
+            <div class="w-1/3 px-2">
+                <div class="h-full w-full bg-[url('/assets/images/LECTURE.png')] bg-cover bg-no-repeat bg-center"></div>
+            </div>
+            <div class="flex w-2/3 px-2">
+                <div class="flex flex-col justify-between w-1/2 px-2">
+                    <div class="h-[48%] w-full bg-[url('/assets/images/ECRITURE.png')] bg-cover bg-no-repeat bg-center">
+                    </div>
+                    <div class="h-[48%] w-full bg-[url('/assets/images/PAROLE.png')] bg-cover bg-no-repeat bg-center">
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between w-1/2 px-2">
+                    <div
+                        class="h-[48%] w-full bg-[url('/assets/images/PHOTOGRAPHIE.png')] bg-cover bg-no-repeat bg-center">
+                    </div>
+                    <div class="h-[48%] w-full bg-[url('/assets/images/TUTORIEL.png')] bg-cover bg-no-repeat bg-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-100">
+        <div class="container mx-auto h-screen flex flex-col justify-center py-8 ">
+            <div class="my-5">
+                <h1 class="font-[romans] text-[60px] leading-[60px] text-center">retour client</h1>
+            </div>
+
+            <div class="owl-carousel owl-theme w-[100%]">
+                <div class="item">
+                    <div class="w-[350px] bg-white rounded-t-[60px] flex flex-col shadow-2xl p-5 mx-5">
+                        <div class="w-1/2 mx-auto">
+                            <img src="/assets/images/banner.png" alt="">
+                        </div>
+                        <div class="text-center font-bold text-lg my-3">
+                            Naomie Mboussa
+                        </div>
+
+                        <div class="text-center mb-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi cupiditate perspiciatis est
+                            eligendi excepturi officiis doloribus alias dicta, rerum dolores error, recusandae quos quis
+                            labore non molestiae optio impedit. Assumenda.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="w-[350px] bg-white rounded-t-[60px] flex flex-col shadow-2xl p-5 mx-5 mt-20">
+                        <div class="w-1/2 mx-auto">
+                            <img src="/assets/images/banner.png" alt="">
+                        </div>
+                        <div class="text-center font-bold text-lg my-3">
+                            Naomie Mboussa
+                        </div>
+
+                        <div class="text-center mb-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi cupiditate perspiciatis est
+                            eligendi excepturi officiis doloribus alias dicta, rerum dolores error, recusandae quos quis
+                            labore non molestiae optio impedit. Assumenda.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="w-[350px] bg-white rounded-t-[60px] flex flex-col shadow-2xl p-5 mx-5">
+                        <div class="w-1/2 mx-auto">
+                            <img src="/assets/images/banner.png" alt="">
+                        </div>
+                        <div class="text-center font-bold text-lg my-3">
+                            Naomie Mboussa
+                        </div>
+
+                        <div class="text-center mb-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi cupiditate perspiciatis est
+                            eligendi excepturi officiis doloribus alias dicta, rerum dolores error, recusandae quos quis
+                            labore non molestiae optio impedit. Assumenda.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="w-[350px] bg-white rounded-t-[60px] flex flex-col shadow-2xl p-5 mx-5 mt-20">
+                        <div class="w-1/2 mx-auto">
+                            <img src="/assets/images/banner.png" alt="">
+                        </div>
+                        <div class="text-center font-bold text-lg my-3">
+                            Naomie Mboussa
+                        </div>
+
+                        <div class="text-center mb-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi cupiditate perspiciatis est
+                            eligendi excepturi officiis doloribus alias dicta, rerum dolores error, recusandae quos quis
+                            labore non molestiae optio impedit. Assumenda.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="w-[350px] bg-white rounded-t-[60px] flex flex-col shadow-2xl p-5 mx-5">
+                        <div class="w-1/2 mx-auto">
+                            <img src="/assets/images/banner.png" alt="">
+                        </div>
+                        <div class="text-center font-bold text-lg my-3">
+                            Naomie Mboussa
+                        </div>
+
+                        <div class="text-center mb-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi cupiditate perspiciatis est
+                            eligendi excepturi officiis doloribus alias dicta, rerum dolores error, recusandae quos quis
+                            labore non molestiae optio impedit. Assumenda.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="w-[350px] bg-white rounded-t-[60px] flex flex-col shadow-2xl p-5 mx-5 mt-20">
+                        <div class="w-1/2 mx-auto">
+                            <img src="/assets/images/banner.png" alt="">
+                        </div>
+                        <div class="text-center font-bold text-lg my-3">
+                            Naomie Mboussa
+                        </div>
+
+                        <div class="text-center mb-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi cupiditate perspiciatis est
+                            eligendi excepturi officiis doloribus alias dicta, rerum dolores error, recusandae quos quis
+                            labore non molestiae optio impedit. Assumenda.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="w-[350px] bg-white rounded-t-[60px] flex flex-col shadow-2xl p-5 mx-5">
+                        <div class="w-1/2 mx-auto">
+                            <img src="/assets/images/banner.png" alt="">
+                        </div>
+                        <div class="text-center font-bold text-lg my-3">
+                            Naomie Mboussa
+                        </div>
+
+                        <div class="text-center mb-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi cupiditate perspiciatis est
+                            eligendi excepturi officiis doloribus alias dicta, rerum dolores error, recusandae quos quis
+                            labore non molestiae optio impedit. Assumenda.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="w-[350px] bg-white rounded-t-[60px] flex flex-col shadow-2xl p-5 mx-5 mt-20">
+                        <div class="w-1/2 mx-auto">
+                            <img src="/assets/images/banner.png" alt="">
+                        </div>
+                        <div class="text-center font-bold text-lg my-3">
+                            Naomie Mboussa
+                        </div>
+
+                        <div class="text-center mb-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi cupiditate perspiciatis est
+                            eligendi excepturi officiis doloribus alias dicta, rerum dolores error, recusandae quos quis
+                            labore non molestiae optio impedit. Assumenda.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="w-[350px] bg-white rounded-t-[60px] flex flex-col shadow-2xl p-5 mx-5">
+                        <div class="w-1/2 mx-auto">
+                            <img src="/assets/images/banner.png" alt="">
+                        </div>
+                        <div class="text-center font-bold text-lg my-3">
+                            Naomie Mboussa
+                        </div>
+
+                        <div class="text-center mb-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi cupiditate perspiciatis est
+                            eligendi excepturi officiis doloribus alias dicta, rerum dolores error, recusandae quos quis
+                            labore non molestiae optio impedit. Assumenda.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="w-[350px] bg-white rounded-t-[60px] flex flex-col shadow-2xl p-5 mx-5 mt-20">
+                        <div class="w-1/2 mx-auto">
+                            <img src="/assets/images/banner.png" alt="">
+                        </div>
+                        <div class="text-center font-bold text-lg my-3">
+                            Naomie Mboussa
+                        </div>
+
+                        <div class="text-center mb-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi cupiditate perspiciatis est
+                            eligendi excepturi officiis doloribus alias dicta, rerum dolores error, recusandae quos quis
+                            labore non molestiae optio impedit. Assumenda.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-orange-400 justify-between py-10 flex-col">
+        <div class="text-center font-[romans] text-[60px] text-white">JM</div>
+        <div class="text-center">
+            <i class="fa-brands fa-facebook p-2 bg-white text-black rounded-full"></i>
+            <i class="fa-brands fa-linkedin-in p-2 bg-white text-black rounded-full"></i>
+            <i class="fa-brands fa-instagram p-2 bg-white text-black rounded-full"></i>
+            <i class="fa-brands fa-twitter p-2 bg-white text-black rounded-full"></i>
+        </div>
+        <div class="w-1/2 mx-auto my-10">
+            <ul class="flex justify-between text-xl text-white">
+                <li>Accueil</li>
+                <li>Portfolio</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="/assets/owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 3,
+                autoWidth: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: 'romans';
+    src: url("/assets/police/romans.otf") format("opentype");
+}
+
+* {
+    font-family: 'Poppins';
+}
+
+.swiper {
+    width: 100%;
+    height: 70%;
+  }
