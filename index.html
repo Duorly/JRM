@@ -36,24 +36,24 @@
 </head>
 
 <body>
-    <div id="home" class="container mx-auto h-screen px-4">
+    <div id="home" class="container mx-auto h-screen px-2 md:px-4 lg:px-4">
         <nav class="flex w-full justify-between my-4 py-4">
             <div class="w-2/3"><img src="/assets/images/logo.png" alt=""></div>
             <div class="w-1/3 hidden md:block">
                 <ul class="flex justify-between text-xl text-clifford">
-                    <li><a href="#home">Accueil</a> </li>
+                    <li class="hover:underline hover:underline-offset-4"><a class="transition duration-150 ease-out hover:ease-in" href="#home">Accueil</a> </li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <section class="flex mx-6 flex-col md:flex-row">
-            <div class="w-1/2 flex flex-col justify-evenly text-xl font-[Poppins]">
+        <section class="flex mx-6 flex-col-reverse md:flex-row">
+            <div class="w-full lg:w-1/2 flex flex-col justify-evenly text-xl font-[Poppins]">
                 <div>
                     <span>Welcome !</span>
 
-                    <div class="font-[romans] text-[60px] leading-[60px] mt-5  animate__animated animate__rubberBand">Je
+                    <div class="font-[romans] text-[40px] leading-[40px] lg:text-[60px] lg:leading-[60px] mt-5  animate__animated animate__rubberBand">Je
                         suis <span class="text-[#F27904] font-[romans]">jalade</span>
                         mongo</div>
                     <span class="text-gray-600">
@@ -69,13 +69,17 @@
 
                 </div>
                 <div>
-                    <i class="fa-brands fa-facebook p-2 bg-black text-white rounded-full"></i>
-                    <i class="fa-brands fa-linkedin-in p-2 bg-black text-white rounded-full"></i>
-                    <i class="fa-brands fa-instagram p-2 bg-black text-white rounded-full"></i>
-                    <i class="fa-brands fa-twitter p-2 bg-black text-white rounded-full"></i>
+                    <a target="_blank" href="https://www.facebook.com/jaladeroger.mongo"><i
+                            class="fa-brands fa-facebook p-2 bg-black text-white rounded-full"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/jalade-roger-mongo-a41484172"><i
+                            class="fa-brands fa-linkedin-in p-2 bg-black text-white rounded-full"></i></a>
+                    <a target="_blank" href="https://twitter.com/JaladeMongo?t=UhMHRMiE4ZTwe7eTRpzhRg&s=09"><i
+                            class="fa-brands fa-instagram p-2 bg-black text-white rounded-full"></i></a>
+                    <a target="_blank" href="https://twitter.com/JaladeMongo?t=UhMHRMiE4ZTwe7eTRpzhRg&s=09"><i
+                            class="fa-brands fa-twitter p-2 bg-black text-white rounded-full"></i></a>
                 </div>
             </div>
-            <div class="w-1/2 flex justify-center p-3">
+            <div class="w-full lg:w-1/2 flex justify-center p-3">
                 <img class="animate__animated animate__backInDown" src="/assets/images/banner.png">
             </div>
 
@@ -343,9 +347,11 @@
         </svg>
     </button>
 
-    <button type="button" onclick="location.href='https://wa.me/+242068136093?text=Bonjour%2C%20comment%20%C3%A7a%20va%3F';"
+    <button type="button"
+        onclick="location.href='https://wa.me/+242068136093?text=Bonjour%2C%20comment%20%C3%A7a%20va%3F';"
         class="group fixed bottom-5 left-5 inline-block m-auto p-2 rounded-full w-[60px] h-[60px] hover:h-auto hover:py-2 hover:w-auto hover:flex hover:animate-bounce leading-normal text-white bg-green-500 z-50">
-        <i class="fa-brands fa-whatsapp fa-2x"></i> <span class="hidden mx-2 my-1 group-hover:block">Discuter avec moi</span>
+        <i class="fa-brands fa-whatsapp fa-2x"></i> <span class="hidden mx-2 my-1 group-hover:block">Discuter avec
+            moi</span>
     </button>
 
 
